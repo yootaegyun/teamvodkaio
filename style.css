@@ -1,0 +1,959 @@
+*
+{
+
+ 
+
+ 
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins, sans-serif';
+}
+
+p
+{
+
+  font-family: 'Gamja Flower', cursive;
+
+
+  font-size: 1.5em;
+  font-weight: 300;
+
+  color: black;
+}
+
+body
+{
+
+
+  min-height: 1000px;
+}
+
+.banner
+{
+  
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./Img/asd.jpg);
+  background-size: cover;
+}
+.banner .content
+{
+  
+  max-width: 900px;
+  text-align: center;
+}
+.banner .content h2
+{
+  font-size: 3em;
+  color: white;
+}
+.banner .content p
+{
+  font-size: 2.0em;
+  color: lightblue;
+}
+.btn
+{
+  font-size: 1em;
+  color: white;
+  background: rgb(149, 169, 233);
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.btn:hover
+{
+  letter-spacing: 6px;
+}
+header
+{
+
+  
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky
+{
+  background: white;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo
+{
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+header.sticky .logo
+{
+  color: black;
+}
+header .logo span
+{
+  color: lightblue;
+}
+header .navigation
+{
+  position: relative;
+  display: flex;
+
+}
+header .navigation li
+{
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a
+{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+
+
+
+
+header.sticky .navigation li a
+{
+  color: black;
+}
+header.sticky .navigation li a:hover
+{
+  color: lightblue;
+}
+
+
+
+
+section
+{
+  padding: 100px;
+}
+.row
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .co150
+{
+  position: relative;
+  width: 48%;
+}
+
+
+.titleText
+{
+  color: black;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+
+.titleText span
+{
+  color: lightblue;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+
+.row .co150 .imgBx
+{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  
+}
+
+
+.row .co150 .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+
+
+
+
+
+
+
+
+
+.title
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu .content
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.menu .content .box
+{
+  width: 340px;
+  margin: 20px;
+  border: 15px solid white;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.menu .content .box .imgBx
+{
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.menu .content .box .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu .content .box .text
+{
+  padding: 15px 0 5px;
+}
+.menu .content .box .text h3
+{
+  
+  color: black;
+}
+.menu .content .box .text h3:hover
+{
+  color: blue;
+}
+
+
+.box .imgBx:hover
+{
+  transform: scale(0.9);
+  
+}
+
+.box
+{
+  
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact
+{
+  background: url(./Img/asdd.jpg);
+  background-size: cover;
+}
+
+.contactForm
+{
+  padding: 75px 50px;
+  
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-top: 50px;
+}
+.contactForm h3
+{
+  color: black;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.contactForm .inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+  width: 50%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+  font-size: 1em;
+  color: black;
+  background: lightblue;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyrightText
+{
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.copyrightText p
+{
+  color: #333;
+}
+.copyrightText a
+{
+  color: lightblue;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 888px)
+{
+  header,
+  header.sticky
+  {
+    padding: 10px 20px;
+  }
+  header .navigation
+  {
+    display: none;
+  }
+
+  header .navigation.active
+  {
+    width: 100%;
+    height: calc(100% - 50px);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+  }
+  header .navigation li 
+  {
+    margin-left: 0;
+  }
+  header .navigation li a
+  {
+    
+    color: #111;
+    font-size: 1.6em;
+    
+  }
+
+ 
+
+
+
+
+
+
+
+
+  .menuToggle
+  {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(./Img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToggle.active
+  {
+    background: url(./Img/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header.sticky .menuToggle
+  {
+    filter: invert(1);
+  }
+
+
+
+
+
+
+
+  section
+  {
+    padding: 20px;
+  }
+  .banner .content h2
+  {
+    font-size: 1.5em;
+    color: white;
+  }
+
+  
+
+  .row
+  {
+    flex-direction: column;
+  }
+  .row .co150
+  {
+    position: relative;
+    width: 100%;
+  }
+  .row .co150 .imgBx
+  {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .menu .coutent
+  {
+    margin-top: 20px;
+  }
+  .menu .coutent .box
+  {
+    margin: 10px;
+  }
+  .menu .coutent .box .imgBx
+  {
+    height: 260px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .title
+  {
+    text-align: center;
+  }
+  .titleText
+  {
+    
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+
+
+
+
+
+
+
+  .contactForm
+  {
+    padding: 35px 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+
+
+}
+
+
+@media (max-width: 468px)
+{
+  .banner .content p
+  {
+    color: black;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro
+{
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider
+{
+  background: lightgray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+
+.intro-text
+{
+  color: rgb(227, 242, 255);
+  font-family: 'Heebo', sans-serif;
+  font-size: 3rem;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span{
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------Or---------*/
+
+
+
+
+
+.ccntent
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  
+  
+}
+
+.ccntent .card
+{
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background: lightsteelblue;
+}
+
+.ccntent .card::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid lightblue;
+  border-right: 20px solid lightblue;
+}
+
+.ccntent .card.active::before
+{
+  border-top: 20px solid lightseagreen;
+  border-right: 20px solid lightseagreen;
+}
+
+
+
+
+
+.ccntent .card .icon
+{
+  margin-bottom: 10px;
+}
+.ccntent .card .icon img
+{
+  max-width: 90px;
+}
+.ccntent .card .cccntent
+{
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+}
+
+.ccntent .card.active .cccntent
+{
+  height: auto;
+}
+
+
+
+.ccntent .card .cccntent::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent,lightsteelblue);
+}
+
+.ccntent .card.active .cccntent::before
+{
+  display: none;
+}
+
+
+
+
+
+
+.ccntent .card .cccntent h3
+{
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.ccntent .card .cccntent p
+{
+  font-weight: 300;
+  color: white;
+}
+
+
+.ccntent .card .more
+{
+  position: relative;
+  padding: 10px 15px;
+  background: lightblue;
+  margin-top: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+
+}
+
+.ccntent .card.active .more
+{
+  background: lightseagreen;
+  color: white;
+}
+
+
+
+
+.ccntent .card .more::before
+{
+  content: 'Read more';
+}
+
+.ccntent .card.active .more::before
+{
+  content: 'Read less';
+}
+
+
+
+
+@media (max-width: 888px)
+{
+  
+
+
+  .ccntent
+  {
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+  }
+  .ccntent .card
+  {
+    position: relative;
+    width: 100%;
+  }
+  .content .card .icon
+  {
+    height: 5px;
+    margin-top: 5px;
+  }
+  
+}
+
+
+
+
+
+/*-----------Ti------------*/
+
+
+
+
+.ccc
+{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ccntainer
+{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.ccntainer .ccrd
+{
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: white;
+  margin: 80px 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease-in-out;
+}
+.ccntainer .ccrd:hover
+{
+  height: 610px;
+}
+
+
+
+
+
+.ccntainer .ccrd .lmgbx
+{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+}
+.ccntainer .ccrd .lmgbx img
+{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.ccntainer .ccrd .oontent
+{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.ccntainer .ccrd:hover .oontent
+{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
